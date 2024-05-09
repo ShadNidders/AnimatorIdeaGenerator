@@ -16,8 +16,8 @@
 
         #generateBtn {
             padding: 10px 20px;
-            background-color: #222E38;
-            color: #fff;
+            background-color: #80087D;
+            color: #222E38;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -45,10 +45,11 @@
     <h1>Generador de Temas Aleatorios</h1>
     <button id="generateBtn">Generar Tema</button>
     <label for="themeCount">Cantidad de temas:</label>
-    <input type="range" id="themeCount" name="themeCount" min="1" max="50" value="1">
+    <input type="range" id="themeCount" name="themeCount" min="2" max="32" value="2">
     <span id="themeCountValue">1</span>
     <div id="themeContainer">
-        <p id="themeText">¡Haz clic en el botón para generar un tema aleatorio!</p>
+        <p id="themeText">Sugiero que animes:</p>
+        <p id="themeIdeas">¡Haz clic en el botón para generar un tema aleatorio!</p>
     </div>
 
     <script>
@@ -81,11 +82,12 @@
 
         const generateBtn = document.getElementById("generateBtn");
         const themeText = document.getElementById("themeText");
+        const themeIdeas = document.getElementById("themeIdeas");
 
         generateBtn.addEventListener("click", () => {
             const randomIndex = Math.floor(Math.random() * themes.length);
             const randomTheme = themes[randomIndex];
-            themeText.textContent = `Suguiero que animes: ${randomTheme}!`;
+            themeIdeas.textContent = `¡Haz clic en el botón para generar un tema aleatorio! Suguiero que animes: ${randomTheme}!`;
         });
     </script>
 </body>
