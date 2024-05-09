@@ -44,6 +44,9 @@
 <body>
     <h1>Generador de Temas Aleatorios</h1>
     <button id="generateBtn">Generar Tema</button>
+    <label for="themeCount">Cantidad de temas:</label>
+    <input type="range" id="themeCount" name="themeCount" min="1" max="50" value="1">
+    <span id="themeCountValue">1</span>
     <div id="themeContainer">
         <p id="themeText">¡Haz clic en el botón para generar un tema aleatorio!</p>
     </div>
@@ -59,7 +62,7 @@
             "Aventura espacial",
             "Superhéroes",
             "Robots",
-            "Criaturas fantásticas"
+            "Criaturas fantásticas",
             "Pelea",
             "Naturaleza",
             "Tecnología",
