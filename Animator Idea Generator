@@ -6,12 +6,12 @@
     <title>Generador de Temas Aleatorios</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Times New Roman, sans-serif;
             text-align: center;
         }
 
         h1 {
-            color: #333;
+            color: #000;
         }
 
         #generateBtn {
@@ -64,7 +64,7 @@
             "Superhéroes",
             "Robots",
             "Criaturas fantásticas",
-            "Pelea",
+            "impact frame",
             "Naturaleza",
             "Tecnología",
             "Espacio",
