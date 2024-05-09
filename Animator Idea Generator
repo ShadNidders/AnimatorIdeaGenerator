@@ -84,8 +84,7 @@
         <span id="themeCountValue">1</span>
     </div>
     <div id="themeContainer">
-        <p id="themeText">Sugiero que animes:</p>
-        <p id="themeIdeas">¡Haz clic en el botón para generar un tema aleatorio!</p>
+        <p id="themeText">¡Haz clic en el botón para generar un tema aleatorio!:</p>
     </div>
 
     <script>
@@ -163,7 +162,7 @@
         function generateTheme() {
             const randomIndex = Math.floor(Math.random() * themes.length);
             const randomTheme = themes[randomIndex];
-            themeIdeas.textContent = `¡Haz clic en el botón para generar un tema aleatorio! Sugiero que animes: ${randomTheme}!`;
+            themeIdeas.textContent = `Sugiero que animes: ${randomTheme}!`;
         }
 
         function resetGenerator() {
