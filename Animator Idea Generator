@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Temas Aleatorios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #generateBtn {
+            padding: 10px 20px;
+            background-color: #222E38;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        #generateBtn:hover {
+            background-color: #0056b3;
+        }
+
+        #themeContainer {
+            border: 2px solid #333;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+
+        #themeText {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generador de Temas Aleatorios</h1>
+    <button id="generateBtn">Generar Tema</button>
+    <div id="themeContainer">
+        <p id="themeText">¡Haz clic en el botón para generar un tema aleatorio!</p>
+    </div>
+
+    <script>
+        const themes = [
+            "Pelea",
+            "En el aire",
+            "Poderes elementales",
+            "Magia",
+            "Viaje en el tiempo",
+            "Mundo submarino",
+            "Aventura espacial",
+            "Superhéroes",
+            "Robots",
+            "Criaturas fantásticas"
+            "Pelea",
+            "Naturaleza",
+            "Tecnología",
+            "Espacio",
+            "Deportes",
+            "elementos",
+            "dia normal",
+            "camara lenta",
+            "grandes velocidades",
+            "edificios",
+            "armas blancas",
+            "armas de fuego",
+            "entrenamiento",
+            "allanamiento militar"
+        ];
+
+        const generateBtn = document.getElementById("generateBtn");
+        const themeText = document.getElementById("themeText");
+
+        generateBtn.addEventListener("click", () => {
+            const randomIndex = Math.floor(Math.random() * themes.length);
+            const randomTheme = themes[randomIndex];
+            themeText.textContent = `Suguiero que animes: ${randomTheme}!`;
+        });
+    </script>
+</body>
+</html>
