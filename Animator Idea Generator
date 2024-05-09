@@ -80,7 +80,7 @@
         <button id="generateBtn">Generar Tema</button>
         <button id="copyBtn">Copiar Ideas</button>
         <label for="themeCount">Cantidad de temas:</label>
-        <input type="range" id="themeCount" name="themeCount" min="2" max="64" value="2">
+        <input type="range" id="themeCount" name="themeCount" min="2" max="32" value="2">
         <span id="themeCountValue">1</span>
     </div>
     <div id="themeContainer">
